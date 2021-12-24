@@ -6,6 +6,7 @@ let x;
 let y;
 
 var canvas = document.querySelector("canvas");
+
 c = canvas.getContext("2d");
 
 canvas.addEventListener("mousedown", (e) => {
@@ -83,3 +84,6 @@ document
     "click",
     (event) => (event.target.href = canvas.toDataURL())
   );
+
+
+  
