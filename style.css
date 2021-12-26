@@ -1,25 +1,33 @@
 
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+
+
+
+main {
+    font-family: "Quicksand", sans-serif;
   background-color: whitesmoke;
+ 
+  
+  
+  
 }
 
 canvas{
     background: #fff;
-    border: 2px dashed black;
+  
     border-top: none;
+    box-shadow: 4px 4px 8px 3px rgb(34 60 80 / 20%);
     
     
 }
 
 .upper-board{
-    background-color: #abe9cd;
-    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
-    
+    background-color: #5e5df0;
+    box-shadow: inset #1a1a57c7 10px 10px 20px -10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 800px;
+
 }
 
 a {
@@ -33,7 +41,7 @@ a {
 
 .donwload, .clear{
     font-size: 20px;
-    font-family: 'Pacifico', cursive;
+    font-family: "Quicksand", sans-serif;
     border-radius: 2px;
    animation: none;
    transition:  2s ease-in-out;
@@ -44,16 +52,18 @@ a {
 .idea-span{
     font-size: 28px;
     margin-bottom: 10px;
-    font-family: 'Pacifico', cursive;
+    font-family: "Quicksand", sans-serif;
 
 
 }
 
 .random-images{
-    border: 2px dashed black;
+    background-color: white;
     width:400px;
     height: 300px;
     position: relative;
+    box-shadow: 4px 4px 8px 3px rgb(34 60 80 / 20%);
+    border-radius: 5px;
     
 
 }
@@ -85,12 +95,13 @@ a {
   }
   
   .noselect {
-      width: 170px;
+      width: 180px;
       height: 60px;
+      font-weight: 700;
       cursor: pointer;
       background: #6dd6d1;
       border: none;
-      font-family: 'Pacifico', cursive;
+      font-family: "Quicksand", sans-serif;
       border-radius: 10px;
       box-shadow: 0px 8px 18px #57aba7, 0px -8px 18px #a6fffa, inset 0px -5px 8px #57aba7, inset 0px 5px 8px #a6fffa;
       outline: none;
@@ -114,11 +125,84 @@ a {
 
 .donwload{
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    border-radius: 25px;
+    background-color: white;
+    color: royalblue;
+    font-weight: 700;
+    transition: animation 2s ease-in-out;
+}
+
+.owl-carousel .owl-item img{
+    object-fit: cover;
+  
+
+}
+
+
+.inspire p{
+    text-align: left !important;
+}
+
+
+
+
+
+
+.text-top{
+    padding-top: 40px;
+   
+    text-align: left !important;
+    border-radius: 12px;
+    padding: 2rem;
+  
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px 3px rgb(34 60 80 / 20%);
+}
+
+.text-top h1{
+    font-weight: 700;
+    color: #5e5df0 ;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+.render-body{
+    margin: auto;
+    
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+    transition: 0.5s ease-in-out;
+}
+
+.render-body:hover{
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+
+
+.render-body h1{
+    font-family: "Quicksand", sans-serif;
+}
+
+.render-body i{
+    font-size: 50px;
+}
+
+.text-top p{
+    text-align: left !important;
+    font-weight: 600; font-size: 18px;  color: #224573;
 }
 
 .clear{
 background-color: tomato;
 transition: 0.3s ease-in-out;
+border-radius: 25px;
+font-weight: 700;
 }
 
 .clear:hover{
@@ -126,8 +210,8 @@ transition: 0.3s ease-in-out;
     background-color: rgb(145, 47, 30);
 }
 .donwload:hover{
-    color: white;
-    animation: zoom-in-zoom-out 2s ease infinite;
+    
+    animation: zoom-in-zoom-out 2s ease-in-out infinite;
 }
 
 
@@ -153,12 +237,18 @@ transition: 0.3s ease-in-out;
 
 p {
     text-align: center;
+    font-family: "Quicksand", sans-serif;
+    
 }
 
 .fa-refresh{
     
     cursor: pointer;
     
+}
+
+.upper-board{
+    margin: auto;
 }
 
 .noselect {
@@ -185,6 +275,7 @@ p {
 
 .board {
     width: 800px;
+    margin: auto;
     
  
 }
@@ -195,7 +286,7 @@ p {
 }
 
 .color-circle{
-    height: 20px;
+    height: 15px;
     width: 20px;
    
     margin-left: 5px;
@@ -226,15 +317,107 @@ p {
     background-color: blue;
 }
 .color-circle:nth-child(7){
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(212, 211, 211);
     background-color: white;
 }
 
 .color-circle:nth-child(8){
     background-color: green;
 }
-
+.color-circle:nth-child(9){
+    background-color: green;
+}
+.color-circle:nth-child(10){
+    background-color: green;
+}
+.color-circle:nth-child(11){
+    background-color: green;
+}
+.color-circle:nth-child(12){
+    background-color: green;
+}
+.color-circle:nth-child(13){
+    background-color: green;
+}
+.color-circle:nth-child(14){
+    background-color: green;
+}
 .active {
     transform: scale(1.3);
 }
 
+
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-button-next:after{
+    font-size: 20px !important;
+}
+
+.swiper-button-prev:after{
+    font-size: 20px  !important;
+}
+
+
+
+
+@media (max-width: 1200px) { 
+.text-top{
+    margin-bottom: 50px;
+}
+
+ }
+
+ @media (max-width: 768px) {
+
+    .text-top h1{
+        font-size: 20px;
+    }
+    .text-top p{
+        font-size: 17px;
+    }
+
+    .render-body i{
+        margin-top: 20px;
+    }
+
+
+   .upper-board, .board, .inspire{
+       display: none;
+
+       
+   }
+  }
